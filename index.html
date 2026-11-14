@@ -214,5 +214,18 @@ footer{text-align:center;font-size:14px;color:var(--gris);padding:30px 20px 90px
 <script>
 document.querySelectorAll('.gal img').forEach(function(i){i.addEventListener('click',function(){var z=document.getElementById('zoom');z.querySelector('img').src=i.src;z.style.display='flex';});});
 </script>
+<script>
+/* Compteur de visites gratuit et anonyme (aucun cookie, aucune donnée personnelle) : une visite par personne et par jour. */
+(function(){var R='https://ntfy.sh/kq-visites-19ec94dee7cb';
+function envoi(t){try{fetch(R,{method:'POST',body:t,mode:'no-cors',keepalive:true,credentials:'omit'});}catch(e){}}
+if(navigator.webdriver)return;
+var s='direct';try{var u=new URLSearchParams(location.search).get('utm_source');var r=document.referrer||'';
+if(u)s=u.toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,20);else if(/pinterest|pin\.it/.test(r))s='pinterest';else if(/google\./.test(r))s='google';else if(/facebook|fb\.|instagram/.test(r))s='facebook';else if(/tiktok/.test(r))s='tiktok';else if(r&&r.indexOf(location.hostname)<0)s='autre';}catch(e){}
+var j=new Date().toISOString().slice(0,10),deja=false;try{deja=localStorage.getItem('mr_vu')===j;localStorage.setItem('mr_vu',j);}catch(e){}
+if(!deja)envoi('v|mes_reperes|'+s);
+document.querySelectorAll('a[href*="bPTj4"]').forEach(function(a){a.addEventListener('click',function(){envoi('c|mes_reperes|achat');});});
+document.querySelectorAll('a[href*="adzP1"]').forEach(function(a){a.addEventListener('click',function(){envoi('c|mes_reperes|echantillon');});});
+})();
+</script>
 </body>
 </html>
