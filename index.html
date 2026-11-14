@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mes repères · Planner grossesse et PMA en français</title>
+<meta name="description" content="Le planner digital tout en douceur pour ton projet bébé, ton parcours PMA ou FIV et tes neuf mois de grossesse. 122 pages cliquables, appli de suivi offerte, 118 stickers. Goodnotes, Notability, Samsung Notes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&family=Mrs+Saint+Delafield&family=Quicksand:wght@500;600;700&display=swap">
+<style>
+:root{--bx:#7A2138;--bx2:#9B3550;--iv:#FAF0EC;--iv2:#FFF8F4;--or:#C9A24E;--or2:#E8C77A;--txt:#3B2B30;--gris:#6E5A60;--rose:#F7D3DC;--lila:#D9CCE8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--iv);color:var(--txt);font-family:Quicksand,system-ui,sans-serif;font-size:18px;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit}
+.w{max-width:1140px;margin:0 auto;padding:0 20px}
+.t{font-family:'Bodoni Moda',serif;font-weight:500;text-transform:uppercase;letter-spacing:.05em;color:var(--bx);line-height:1.05;margin:0}
+.sc{font-family:'Mrs Saint Delafield',cursive;color:var(--bx2);font-size:2.4em;line-height:1.1}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--bx);color:#FFF6EE;text-decoration:none;font-weight:700;font-size:20px;padding:18px 34px;border-radius:999px;box-shadow:0 0 0 4px var(--iv),0 0 0 6px var(--or);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn small{font-weight:600;opacity:.85}
+/* Haut */
+header{position:sticky;top:0;z-index:5;background:rgba(250,240,236,.94);backdrop-filter:blur(6px);border-bottom:1px solid rgba(201,162,78,.35)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:'Bodoni Moda',serif;text-transform:uppercase;letter-spacing:.12em;color:var(--bx);font-size:20px;text-decoration:none}
+header .btn{font-size:16px;padding:10px 22px;box-shadow:none}
+/* Bandeau promo */
+.promo{background:var(--bx);color:#FFF6EE;text-align:center;font-weight:700;font-size:15px;padding:9px 16px}
+.promo b{color:var(--or2)}
+/* Accueil */
+.hero{padding:48px 0 40px;position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;opacity:.55;z-index:-1}
+.hero:before{width:520px;height:520px;background:var(--rose);left:-200px;top:40px}
+.hero:after{width:560px;height:560px;background:var(--lila);right:-220px;top:-80px}
+.hero .w{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center}
+.hero h1{font-size:54px}
+.hero .sc{margin:6px 0 18px}
+.prix{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px;margin:22px 0}
+.prix>*{white-space:nowrap}
+.prix .n{font-family:'Bodoni Moda',serif;font-size:46px;color:var(--bx)}
+.prix s{color:var(--gris);font-size:22px}
+.prix .p{background:var(--or);color:#fff;font-weight:700;font-size:14px;padding:5px 12px;border-radius:999px;letter-spacing:.06em;text-transform:uppercase}
+.coches{list-style:none;padding:0;margin:0 0 26px}
+.coches li{padding-left:34px;position:relative;margin:7px 0;font-weight:600}
+.coches li:before{content:"✓";position:absolute;left:0;top:0;color:var(--bx);font-weight:700}
+.rassure{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;font-size:15px;color:var(--gris);font-weight:600}
+.hero .img{border-radius:22px;overflow:hidden;box-shadow:0 30px 60px rgba(122,33,56,.18)}
+/* Bande */
+.bande{background:var(--bx);color:#FFF6EE}
+.bande .w{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:22px 20px;text-align:center;font-weight:700}
+.bande b{display:block;font-family:'Bodoni Moda',serif;font-weight:500;font-size:34px;color:var(--or2)}
+/* Sections */
+section{padding:70px 0}
+.tete{text-align:center;margin-bottom:38px}
+.tete h2{font-size:40px}
+.tete .sc{font-size:2em}
+.pour{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.carte{background:var(--iv2);border-radius:20px;padding:30px 26px;box-shadow:inset 0 0 0 2px rgba(201,162,78,.45)}
+.carte h3{font-family:'Bodoni Moda',serif;font-weight:500;color:var(--bx);text-transform:uppercase;letter-spacing:.05em;font-size:21px;margin:10px 0 8px}
+.carte .ic{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px}
+.carte p{margin:0;color:var(--gris)}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.gal img{border-radius:18px;box-shadow:0 18px 40px rgba(122,33,56,.13);cursor:zoom-in}
+.fond{background:var(--iv2)}
+.recois{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.recois div{background:var(--iv);border-radius:18px;padding:22px 24px;display:flex;gap:16px;align-items:flex-start}
+.recois i{flex:none;width:22px;height:22px;border-radius:50%;margin-top:5px}
+.recois b{display:block;color:var(--bx)}
+.recois span{color:var(--gris);font-size:16px}
+.compat{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:30px}
+.compat span{background:var(--iv);border-radius:999px;padding:10px 22px;font-weight:700;box-shadow:inset 0 0 0 2px rgba(201,162,78,.6)}
+.etapes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:e}
+.etapes div{text-align:center;padding:10px}
+.etapes div:before{counter-increment:e;content:counter(e);display:flex;align-items:center;justify-content:center;width:64px;height:64px;margin:0 auto 14px;border-radius:50%;background:var(--bx);color:#FFF6EE;font-family:'Bodoni Moda',serif;font-size:30px;box-shadow:0 0 0 5px var(--iv),0 0 0 7px var(--or)}
+.etapes b{display:block;color:var(--bx);font-size:19px}
+.etapes span{color:var(--gris)}
+.faq{max-width:820px;margin:0 auto}
+.faq details{background:var(--iv2);border-radius:16px;margin:12px 0;padding:4px 24px;box-shadow:inset 0 0 0 1px rgba(201,162,78,.4)}
+.faq summary{cursor:pointer;font-weight:700;padding:16px 0;color:var(--bx);list-style:none;position:relative;padding-right:30px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:0;top:12px;font-size:26px;color:var(--or)}
+.faq details[open] summary:after{content:"−"}
+.faq p{margin:0 0 18px;color:var(--gris)}
+.fin{text-align:center;background:var(--bx);color:#FFF6EE}
+.fin .t{color:#FFF6EE;font-size:40px}
+.fin .sc{color:var(--or2)}
+.fin .btn{background:var(--or);box-shadow:0 0 0 4px var(--bx),0 0 0 6px #FFF6EE;margin-top:24px}
+.fin .prix{justify-content:center}.fin .prix .n{color:#FFF6EE}.fin .prix s{color:#E9CBD3}
+footer{text-align:center;font-size:14px;color:var(--gris);padding:30px 20px 90px}
+/* Bouton fixe sur téléphone */
+.fixe{display:none}
+/* Zoom photo */
+#zoom{position:fixed;inset:0;background:rgba(40,20,28,.85);display:none;align-items:center;justify-content:center;z-index:20;padding:20px}
+#zoom img{max-height:92vh;border-radius:14px}
+@media (max-width:820px){
+  body{font-size:17px}
+  .hero{padding:26px 0}
+  .hero .w{grid-template-columns:1fr;gap:24px}
+  .hero .img{order:-1}
+  .hero h1{font-size:30px}
+  .bande .w{grid-template-columns:repeat(2,1fr)}
+  .pour,.recois,.etapes,.gal{grid-template-columns:1fr}
+  section{padding:48px 0}
+  .tete h2,.fin .t{font-size:30px}
+  header .btn{display:none}
+  .fixe{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:6;justify-content:center;box-shadow:0 10px 30px rgba(122,33,56,.35)}
+}
+</style>
+</head>
+<body>
+<div class="promo">Prix de lancement : <b>9,90 €</b> au lieu de 14,90 € · Téléchargement immédiat</div>
+<header><div class="w"><a class="logo" href="#">Mes repères</a><a class="btn" href="https://payhip.com/b/bPTj4">Je le veux · 9,90 €</a></div></header>
+
+<div class="hero"><div class="w">
+  <div>
+    <h1 class="t">Planner grossesse<br>&amp; parcours PMA</h1>
+    <div class="sc">De l'envie à l'arrivée</div>
+    <p>Le carnet digital tout en douceur pour ton projet bébé, ta PMA ou ta FIV, tes neuf mois de grossesse et l'arrivée de bébé. <b>Entièrement en français.</b></p>
+    <div class="prix"><span class="n">9,90 €</span><s>14,90 €</s><span class="p">Lancement −33 %</span></div>
+    <ul class="coches">
+      <li>122 pages cliquables, prêtes à remplir</li>
+      <li>Une appli de suivi offerte, sans abonnement</li>
+      <li>118 stickers aquarelle</li>
+      <li>Goodnotes, Notability, Samsung Notes</li>
+    </ul>
+    <a class="btn" href="https://payhip.com/b/bPTj4">Je veux mon carnet <small>· 9,90 €</small></a>
+    <div class="rassure"><span>♡ Paiement sécurisé</span><span>♡ Fichiers reçus tout de suite</span><span>♡ Mises à jour gratuites</span></div>
+  </div>
+  <div class="img"><img src="01-couverture.jpg" alt="Le planner Mes repères sur une tablette et l'appli sur un téléphone"></div>
+</div></div>
+
+<div class="bande"><div class="w">
+  <div><b>122</b>pages</div><div><b>118</b>stickers</div><div><b>1</b>appli offerte</div><div><b>100 %</b>en français</div>
+</div></div>
+
+<section><div class="w">
+  <div class="tete"><h2 class="t">Pensé pour toi</h2><div class="sc">Une chose à la fois</div></div>
+  <div class="pour">
+    <div class="carte"><div class="ic" style="background:var(--rose)">🌸</div><h3>Tu rêves d'un bébé</h3><p>Ton cycle, tes essais, tes tests, tes questions : tout au même endroit, sans pression.</p></div>
+    <div class="carte"><div class="ic" style="background:var(--lila)">💉</div><h3>Tu es en PMA ou FIV</h3><p>Traitements, piqûres, ponction, transfert, les deux semaines d'attente et ton équipe médicale.</p></div>
+    <div class="carte"><div class="ic" style="background:#FBE3A8">🤰</div><h3>Tu es enceinte</h3><p>Un chapitre par mois, tes rendez-vous, la taille de bébé, ta valise et tes souvenirs.</p></div>
+  </div>
+</div></section>
+
+<section class="fond"><div class="w">
+  <div class="tete"><h2 class="t">Regarde dedans</h2><div class="sc">Touche une photo pour l'agrandir</div></div>
+  <div class="gal">
+    <img src="02-tout-le-carnet.jpg" alt="Tout ce qu'il y a dans le carnet">
+    <img src="03-projet-bebe-pma.jpg" alt="Les pages projet bébé et PMA">
+    <img src="04-neuf-mois.jpg" alt="Les pages des neuf mois">
+    <img src="05-bien-etre.jpg" alt="Les pages bien-être">
+    <img src="06-appli.jpg" alt="L'appli de suivi offerte">
+    <img src="07-cliquable.jpg" alt="Les liens cliquables">
+    <img src="08-stickers.jpg" alt="Les 118 stickers aquarelle">
+    <img src="09-tu-recois.jpg" alt="Ce que tu reçois">
+  </div>
+</div></section>
+
+<section><div class="w">
+  <div class="tete"><h2 class="t">Ce que tu reçois</h2><div class="sc">Tout de suite après l'achat</div></div>
+  <div class="recois">
+    <div><i style="background:#F3B6C8"></i><p style="margin:0"><b>Le planner PDF de 122 pages</b><span>Liens cliquables : rubriques, mois, sommaire. Format tablette.</span></p></div>
+    <div><i style="background:#C9B8E6"></i><p style="margin:0"><b>L'appli de suivi intelligente</b><span>« Mon repère du jour », « Aide-moi », minuteur de contractions, rappels de piqûres. Sans internet, sans abonnement.</span></p></div>
+    <div><i style="background:#F7D98A"></i><p style="margin:0"><b>118 stickers aquarelle</b><span>Fond transparent : 16 humeurs du jour, mamans, fleurs, bébé, cadres fleuris.</span></p></div>
+    <div><i style="background:#BFE0DA"></i><p style="margin:0"><b>Le guide d'installation</b><span>Pas à pas pour Goodnotes, Notability, Samsung Notes et Noteshelf.</span></p></div>
+  </div>
+  <div class="compat"><span>iPad · Goodnotes</span><span>iPad · Notability</span><span>Android · Samsung Notes</span><span>Noteshelf</span></div>
+</div></section>
+
+<section class="fond"><div class="w">
+  <div class="tete"><h2 class="t">Comment ça marche</h2><div class="sc">En 3 minutes</div></div>
+  <div class="etapes">
+    <div><b>J'achète</b><span>Paiement sécurisé par carte ou PayPal.</span></div>
+    <div><b>Je reçois</b><span>Le lien de téléchargement arrive tout de suite par e-mail.</span></div>
+    <div><b>J'ouvre</b><span>J'importe le PDF dans mon appli de notes et je commence.</span></div>
+  </div>
+</div></section>
+
+<section><div class="w">
+  <div class="tete"><h2 class="t">Tes questions</h2></div>
+  <div class="faq">
+    <details><summary>Est-ce que je reçois quelque chose par la poste ?</summary><p>Non, c'est un carnet numérique. Tu reçois les fichiers par e-mail juste après l'achat, et tu peux les télécharger quand tu veux.</p></details>
+    <details><summary>Quelle tablette faut-il ?</summary><p>Un iPad avec Goodnotes ou Notability, ou une tablette Android avec Samsung Notes ou Noteshelf. Le guide t'explique tout.</p></details>
+    <details><summary>Je ne suis pas en PMA, il est fait pour moi ?</summary><p>Oui. Les pages PMA sont une rubrique parmi d'autres. Tu peux les sauter et utiliser le reste pour ton projet bébé et ta grossesse.</p></details>
+    <details><summary>L'appli a besoin d'internet ou d'un abonnement ?</summary><p>Non. Elle s'ouvre dans le navigateur, marche sans internet et ne coûte rien de plus. Ce que tu notes reste sur ton appareil.</p></details>
+    <details><summary>Je peux l'offrir ?</summary><p>Oui, c'est une belle idée cadeau pour une future maman. Achète-le et transfère-lui l'e-mail de téléchargement.</p></details>
+    <details><summary>Est-ce que ça remplace mon médecin ?</summary><p>Non. Le carnet sert à t'organiser et à garder une trace. Il ne remplace jamais l'avis de ton équipe médicale.</p></details>
+  </div>
+</div></section>
+
+<section class="fin"><div class="w">
+  <h2 class="t">Ton carnet t'attend</h2>
+  <div class="sc">De l'envie à l'arrivée</div>
+  <div class="prix"><span class="n">9,90 €</span><s>14,90 €</s></div>
+  <a class="btn" href="https://payhip.com/b/bPTj4">Je veux mon carnet</a>
+</div></section>
+
+<footer>Mes repères · Carnet numérique, usage personnel · Paiement sécurisé par Payhip</footer>
+<a class="btn fixe" href="https://payhip.com/b/bPTj4">Je veux mon carnet · 9,90 €</a>
+<div id="zoom" onclick="this.style.display='none'"><img alt=""></div>
+<script>
+document.querySelectorAll('.gal img').forEach(function(i){i.addEventListener('click',function(){var z=document.getElementById('zoom');z.querySelector('img').src=i.src;z.style.display='flex';});});
+</script>
+</body>
+</html>
