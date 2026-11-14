@@ -62,6 +62,8 @@ section{padding:70px 0}
 .gal{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
 .gal img{border-radius:18px;box-shadow:0 18px 40px rgba(122,33,56,.13);cursor:zoom-in}
 .fond{background:var(--iv2)}
+.vids{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.vids video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:22px;background:var(--rose);box-shadow:0 18px 40px rgba(122,33,56,.15)}
 .recois{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .recois div{background:var(--iv);border-radius:18px;padding:22px 24px;display:flex;gap:16px;align-items:flex-start}
 .recois i{flex:none;width:22px;height:22px;border-radius:50%;margin-top:5px}
@@ -100,6 +102,8 @@ footer{text-align:center;font-size:14px;color:var(--gris);padding:30px 20px 90px
   .hero h1{font-size:30px}
   .bande .w{grid-template-columns:repeat(2,1fr)}
   .pour,.recois,.etapes,.gal{grid-template-columns:1fr}
+  .vids{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -20px;padding:0 20px 8px}
+  .vids video{flex:0 0 62%;scroll-snap-align:center}
   section{padding:48px 0}
   .tete h2,.fin .t{font-size:30px}
   header .btn{display:none}
@@ -132,6 +136,16 @@ footer{text-align:center;font-size:14px;color:var(--gris);padding:30px 20px 90px
 <div class="bande"><div class="w">
   <div><b>122</b>pages</div><div><b>118</b>stickers</div><div><b>1</b>appli offerte</div><div><b>100 %</b>en français</div>
 </div></div>
+
+<section class="fond"><div class="w">
+  <div class="tete"><h2 class="t">Regarde-le en vrai</h2><div class="sc">Feuillette avec moi</div></div>
+  <div class="vids">
+    <video src="v1-je-feuillette-mon-carnet.mp4" poster="v1-je-feuillette-mon-carnet.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Je feuillette mon carnet de grossesse"></video>
+    <video src="v2-mon-carnet-pma.mp4" poster="v2-mon-carnet-pma.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Mon carnet pour la PMA et la FIV"></video>
+    <video src="v3-mes-neuf-mois.mp4" poster="v3-mes-neuf-mois.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Mes neuf mois, un chapitre par mois"></video>
+    <video src="v4-ma-valise-de-maternite.mp4" poster="v4-ma-valise-de-maternite.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Ma valise de maternité"></video>
+  </div>
+</div></section>
 
 <section><div class="w">
   <div class="tete"><h2 class="t">Pensé pour toi</h2><div class="sc">Une chose à la fois</div></div>
